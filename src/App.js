@@ -5,7 +5,7 @@ import Header from './Header.js';
 
 export default function App() {
   return (
-    <div>
+    <div className="App">
       <Header />
       <Carousel />
     </div>
