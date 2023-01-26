@@ -1,5 +1,11 @@
 import React from 'react';
 
 export default function Carousel() {
-  return <div ClassName="Main"></div>;
+  return (
+    <div>
+      <div ClassName="Main">
+        <div className="Main-Features-1"></div>
+      </div>
+    </div>
+  );
 }

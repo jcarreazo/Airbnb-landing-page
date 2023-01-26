@@ -20,7 +20,6 @@ const img8 =
   'https://images.pexels.com/photos/1930364/pexels-photo-1930364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
 const img9 =
   'https://images.pexels.com/photos/2403391/pexels-photo-2403391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
-
 export default function Header() {
   return (
     <div>
@@ -48,7 +47,17 @@ export default function Header() {
           <img src={img9} alt="img-9" className="CroppingType1" />
         </div>
       </div>
-      <div className="Main-Text"></div>
+      <div className="Main-Text">
+        <div>
+          <p className="Main-Text-Title">Online Experiences.</p>
+        </div>
+        <div>
+          <p className="Main-Text-Paragraph">
+            Join unique interactive activities led by one-of-a-kind hosts—all
+            without leaving home.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
