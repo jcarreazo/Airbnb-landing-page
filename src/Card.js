@@ -1,24 +1,28 @@
 import React from 'react';
-var random = Math.floor(Math.random() * 1000);
-`https://picsum.photos/id/${random}`;
-console.log();
-console.log(reponse);
+var imageNew = `https://picsum.photos/800/600`;
 export default function Card(props) {
   return (
     <div>
       <div className="Card-Cointainer">
         <div class="Card-element-1">
-          <img src={props.url} alt={props.alts} className="Img-Card" />
-          <p className="Status-text"></p>
+          <img
+            src={imageNew}
+            alt={props.alts}
+            className="Img-Card CroppingType4"
+          />
+          <p className="Status-text">{props.Status}</p>
         </div>
-        <div class="Card-element-2">
-          <i class="fa-solid fa-star-sharp"></i>
-          {props.RatesNumber}
-          {props.RatesQuantity}
-          {props.Country}
+        <div className="Card-element-2">
+          <i className="fa-solid fa-star"></i>
+          <p className="RatesNumber">{props.RatesNumber}</p>
+          <p className="RatesQuantity">{props.RatesQuantity}</p>
+          <p className="Country">{props.Country}</p>
         </div>
         <div class="Card-element-3">{props.Description}</div>
-        <div class="Card-element-4">{props.Price}</div>
+        <div class="Card-element-4">
+          <p class="Price">{props.Price}</p>
+          <p>/ person</p>
+        </div>
       </div>
     </div>
   );
