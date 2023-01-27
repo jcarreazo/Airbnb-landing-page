@@ -4,6 +4,8 @@
   background-color: whitesmoke;
   margin: 0;
   font-family: 'Poppins';
+  display: flex;
+  flex-direction: column;
 }
 img {
   width: 10rem;
@@ -92,7 +94,7 @@ img {
 .Status-text {
   position: absolute;
   margin: 0.5rem 0 0 0.6rem;
-  padding: 0.3rem;
+  padding: 0.15rem;
   font-size: 11px;
   background-color: white;
   border-radius: 3px;
@@ -130,4 +132,13 @@ img {
 .RatesQuantity,
 .Country {
   color: #918e9b;
+}
+.Main-Features-1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.Card-Cointainer {
+  padding: 0 0.3rem;
 }

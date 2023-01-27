@@ -1,12 +1,11 @@
 import React from 'react';
-var imageNew = `https://picsum.photos/800/600`;
 export default function Card(props) {
   return (
     <div>
       <div className="Card-Cointainer">
         <div class="Card-element-1">
           <img
-            src={imageNew}
+            src={props.image}
             alt={props.alts}
             className="Img-Card CroppingType4"
           />
